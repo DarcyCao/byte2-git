@@ -45,8 +45,21 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+	<h2>Quality: About This Data Set</h2>
+        <p>The data set contains the information of the number of people who suffer from depression 
+        in each state of the US during the year 2006 and 2008, the percentage of major depression, 
+        other depression, and current depression (with a 95% confidence interval).</a></p>
+        <p>As for its quality:</p>
+        <p>The findings in this report are subject to at least three limitations. 
+        First, the increase in the number households with cellular telephones only and 
+        the increase in telephone number portability continue to decrease BRFSS response rates, 
+        reducing the precision of state estimates and potentially introducing bias; 
+        however, in 2009 all states incorporated surveys for cellular telephone households 
+        along with landline surveys, which should increase response rates to the survey. 
+        Second, institutionalized and homeless persons are not included in BRFSS surveys; 
+        their inclusion might have increased depression estimates. 
+        Finally, because not all states participated, estimates might not be generalizable to 
+        the entire U.S. adult population.</p>
       </div>
 
     
@@ -54,6 +67,18 @@
 	<h2>Is the data complete?</h2>
 	<p>If not, what is missing and what concerns does it raise?
 	What is your evidence for this?</p>
+	<h3> - What is missing:</h3>
+	<p>The data is not complete. According to the official report, data in the table were collected by 16 states 
+	in 2008 and by 29 different states, the District of Columbia, and two territories in 2006. 
+	Five states (Kentucky, New Jersey, North Carolina, Pennsylvania, and South Dakota) did not participate 
+	in either year. Nine states (Hawaii, Kansas, Louisiana, Maine, Mississippi, Nebraska, North Dakota, 
+	Vermont, and Washington) participated in both years, but only 2008 data were included.</p>
+	<p>(Source: <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5938a2.htm">Morbidity and
+        Mortality Weekly Report (MMWR), table 2. Age-standardized percentage of adults meeting criteria 
+        for current depression, by type of depression and state/territory 
+        --- Behavioral Risk Factor Surveillance System, United States, 2006 and 2008.</a>).</p>
+    <h3> - Concern it raises and evidence:</h3>
+    <p></p>
       </div>
       
       <div class="page-header">
@@ -61,20 +86,50 @@
 	<p>Does it make sense relative to itself? Does it match your
 	expectations? Are the distributions sensible? What is your
 	evidence for this?</p>
+	<p>I think the data is coherent. In the sense that more people have depression in the states that has big cities
+	or is around the costal areas, and the percentage of major depression and other depression in most states 
+	is similar to the result of the states that share their borderline.</p>
       </div>
+      
+    <p class = "lead">The number of people suffering from depression in the sample in all states across the United States:</p>
+	<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0%3E%3E0+from+1KJGYSZK4RkDxai0EwrBkuRnO1kP-b2njuu4qSJ_U&amp;viz=MAP&amp;h=false&amp;lat=35.7627205897582&amp;lng=-67.18443499999995&amp;t=1&amp;z=3&amp;l=col0%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+    
+    <p class = "lead">The percentage of people suffering from major depression in each state:</p>
+    <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0%3E%3E0+from+1A6tk19-ZRXjzWg1VCxKe79rKa8dBgpQ5sTjXWOJl&amp;viz=MAP&amp;h=false&amp;lat=42.761677499746206&amp;lng=-98.64927874999995&amp;t=1&amp;z=4&amp;l=col0%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+    
+
+
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
 	<p>What aspects of this data can you verify? How did you do so? What did
 	you find?</p>
+	<h3> - In terms of how the data is gathered from questionaire:</h3>
+	<p>I think the researchers did a pretty good job on the criterias of different levels of mental states that 
+	could effectively and scientifically identify people with depression. According to the report, the questionaire 
+	was determined based on responses to the Patient Health Questionnaire 8 (PHQ-8), which covers eight of the nine
+	criteria from the Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV) for diagnosis 
+	of major depressive disorder. And it also explained why this questionaire can get the best result. </p>
+	
+	<h3> - How the data was processed and categorized:</h3>
+      <p>Participants were considered to have major depression if, for "more than half the days," 
+      they met at least five of the eight criteria, including at least one of the following: 
+      1) "little interest or pleasure in doing things" or 2) "feeling down, depressed, or hopeless."
+      Participants were considered to have "other depression" if they met two, three, or four of the eight criteria, 
+      including at least one of the two specified. Weighted prevalence estimates for major depression and
+      "other depression" and 95% confidence intervals were calculated using statistical software to 
+      account for the complex survey design. Estimates were stratified by type of depression, age, 
+      sex, race/ethnicity, education level, and marital, employment, and health insurance coverage plan status. 
+      Age-standardized estimates also were calculated by state/territory using the 2000 U.S. standard population. 
+      For comparisons of prevalence, statistical significance (0.05) was determined using a two-sided z-test.</p>
       </div>
 
     </div> <!-- /container -->
 
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>

@@ -72,7 +72,7 @@ def make_query(cols, limit):
 def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
     request = service.column().list(tableId=TABLE_ID)
-    allheaders = get_all_data(make_query([], 10))
+    allheaders = get_all_data(make_query([], 50))
     logging.info('allheaders')
     return template.render(allheaders=allheaders['columns'], headers=allheaders['columns'], content=allheaders['rows'])
 
